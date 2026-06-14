@@ -12,7 +12,7 @@ Open-source, non-custodial, USD-priced payments + commerce + identity. No contra
 ![Router coverage](https://img.shields.io/badge/router-100%25%20fn%20%C2%B7%20~98%25%20lines-44CC11?style=for-the-badge)
 ![Slither](https://img.shields.io/badge/slither-0%20exploitable-44CC11?style=for-the-badge)
 ![Non-custodial](https://img.shields.io/badge/custody-none-5B21B6?style=for-the-badge)
-![Base Sepolia](https://img.shields.io/badge/live-Base%20Sepolia-1D4ED8?style=for-the-badge)
+![Base Sepolia + Arc](https://img.shields.io/badge/live-Base%20Sepolia%20%2B%20Arc%20Testnet-1D4ED8?style=for-the-badge)
 
 [Live demo](https://access0x1.nfteria.click) · [Repo](https://github.com/Access0x1/Access0x1) · [SDK](https://github.com/Access0x1/Access0x1/tree/main/packages/react) · [Truthful self-audit](https://github.com/Access0x1/Access0x1/blob/main/AUDIT.md)
 
@@ -37,6 +37,7 @@ A single shared, multi-tenant router serves every merchant. Each payment is pric
 - **859 tests, 0 failed** · 13 headline / 45 total fuzz invariants (`fail_on_revert = true`)
 - Router coverage **100% functions / ~98% lines / ~97% branches** · **Slither: 0 exploitable**
 - **Deployed + verified on Base Sepolia** — router [`0xec89c9eE28AF42Ae2b917BB0bAe245EAad6E8E57`](https://base-sepolia.blockscout.com/address/0xec89c9eE28AF42Ae2b917BB0bAe245EAad6E8E57)
+- **Deployed + verified on Arc Testnet (5042002)** — router [`0xA5982ea8842Eea97C6e313A5f75FD8CF72C69Aad`](https://testnet.arcscan.app/address/0xa5982ea8842eea97c6e313a5f75fd8cf72c69aad)
 - **MIT**, built in public, **non-custodial by construction** (refunds can never be blocked)
 - A public **[truthful self-audit](https://github.com/Access0x1/Access0x1/blob/main/AUDIT.md)** that labels every seam and gap
 
@@ -45,11 +46,11 @@ A single shared, multi-tenant router serves every merchant. Each payment is pric
 - **Chainlink** — Data Feeds price USD→token *inside the pay tx* (the price that drives settlement, not a preview).
 - **ENS** — verified merchant identity (ENSIP-19) + gasless `merchant-<id>.<parent>.eth` subnames via Namestone.
 - **World ID** — verified-human checkout gate (shipped on `main`).
-- **Circle x402 / Gateway** — gas-free USDC settlement via EIP-3009. *(Arc is the intended lead chain — USDC is its native gas token — but the only chain with a live deploy is Base Sepolia; Arc is one-command ready.)*
+- **Circle x402 / Gateway** — gas-free USDC settlement via EIP-3009. Arc is the lead chain — USDC is its native gas token — and all 8 contracts are **deployed + verified on Arc Testnet** alongside Base Sepolia.
 - *Seams (code present, not yet in the live path): Walrus, Unlink, Blink, Uniswap payout-swap.*
 
 ## Chains
-**Deployed + verified: Base Sepolia (84532).** Arc + zkSync Sepolia are **one-command ready** (`make deploy-arc` / `deploy-zksync`) but not yet broadcast. **Testnet only — no mainnet deployments and no mainnet claims.**
+**Deployed + verified: Base Sepolia (84532) and Arc Testnet (5042002).** zkSync Sepolia is **one-command ready** (`make deploy-zksync`) but not yet broadcast. **Testnet only — no mainnet deployments and no mainnet claims.**
 
 ## Get started
 ```bash
