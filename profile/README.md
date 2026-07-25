@@ -41,7 +41,9 @@ npx degit Access0x1/Access0x1/templates/starter my-checkout   # the whole stack,
 
 ## Building with, this weekend — ETHGlobal Lisbon 2026
 
-**Uniswap** (a v4 hook that turns swaps into attributable receipts) ·
+**Uniswap** (a real swap landed through the shipped rail during the event —
+[fill == quote, to the wei](https://sepolia.etherscan.io/tx/0x936acc13fd35032da86aa7075608131f3c39addb9198d7d5877e54ff51a24e69) —
+plus a v4 hook that turns swaps into attributable receipts) ·
 **0G** (the assistant answers on 0G Compute, badge visible) ·
 **World** (an AgentKit admission gate in front of the paying agent) ·
 **ENS** (a payment resolver, and an agent identity that publishes its own
