@@ -9,7 +9,7 @@ Open-source, non-custodial, USD-priced payments + commerce + identity. No contra
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-0B7261?style=for-the-badge)
 ![Non-custodial](https://img.shields.io/badge/custody-none-5B21B6?style=for-the-badge)
-![One address, 8 testnets](https://img.shields.io/badge/one%20CREATE3%20address-8%20testnets-1D4ED8?style=for-the-badge)
+![One address, 8 testnets](https://img.shields.io/badge/one%20CREATE3%20address-9%20testnets-1D4ED8?style=for-the-badge)
 
 [Live app](https://access0x1.click) · [Repo](https://github.com/Access0x1/Access0x1) · [SDK](https://github.com/Access0x1/Access0x1/tree/main/packages/react) · [Truthful self-audit](https://github.com/Access0x1/Access0x1/blob/main/AUDIT.md)
 
@@ -31,7 +31,7 @@ npx degit Access0x1/Access0x1/templates/starter my-checkout   # the whole stack,
 ## The proof
 
 - The same **CREATE3** router — [`0xe92244e3368561faf21648146511DeDE3a475EB5`](https://sepolia.basescan.org/address/0xe92244e3368561faf21648146511DeDE3a475EB5) —
-  serves **8 testnets** (7 source-verified), with registered merchants and settled
+  serves **nine testnets** (7 source-verified), with registered merchants and settled
   payments you can read on-chain.
 - Test counts are **CI-enforced on the [repo badges](https://github.com/Access0x1/Access0x1#readme)** —
   read them there, fresh, over 2,000 Foundry tests strong plus the web suite.
